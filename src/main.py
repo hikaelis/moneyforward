@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from login import login_to_home
+from pages import get_page
 
 
 def main():
@@ -12,6 +13,9 @@ def main():
 
     # login
     browser = login_to_home(browser=browser)
+
+    # '資産'ページに移動
+    asset_page = get_page(browser=browser, target_page="asset")
 
 
 main()
