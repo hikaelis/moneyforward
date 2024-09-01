@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from login import login_to_home
 from pages import get_page
+from line_message import send_text_message
 
 
 def main():
